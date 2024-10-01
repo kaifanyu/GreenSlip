@@ -19,6 +19,11 @@ GreenSlip is an innovative platform that bridges the gap between financial manag
 - **Interactive Dashboard**: Users can track their spending habits and carbon footprint through an intuitive and visually appealing dashboard.
 - **Time-based Analytics**: Filter data by monthly, yearly, or all-time records to track progress over time.
 
+<div align=center>
+  <image src='https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/931/048/datas/gallery.jpg' height=400>
+  <image src='https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/930/941/datas/gallery.jpg' height=400>
+</div>
+
 ## Tech Stack
 
 - **Frontend**: 
@@ -106,11 +111,6 @@ GreenSlip is an innovative platform that bridges the gap between financial manag
 - **Accomplishments**:
   - Aesthetic and functional user interface with smooth user interactions.
   - Data visualization that provides clear insights into financial health and environmental impact.
-
-<div align=center>
-  <image src='https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/931/048/datas/gallery.jpg' height=400>
-  <image src='https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/930/941/datas/gallery.jpg' height=400>
-</div>
 
 ## What's Next
 
