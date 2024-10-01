@@ -9,17 +9,11 @@ import BarChart from './BarChart';
 import './Dashboard.css'
 import OpenAI from "openai";
 
-const openai = new OpenAI({apiKey: 'sk-proj-SN5BOpjNesNgTjxxNVQVT3BlbkFJK9RqNraGAdG1PBoz1GCT',  dangerouslyAllowBrowser: true});
+const openai_key = '';
 
-const firebaseConfig = {
-  apiKey: "AIzaSyA2NhkIIrWIBqAoQTseuBqdLngMaKeJTbI",
-  authDomain: "greenslip-6e16b.firebaseapp.com",
-  projectId: "greenslip-6e16b",
-  storageBucket: "greenslip-6e16b.appspot.com",
-  messagingSenderId: "841366779607",
-  appId: "1:841366779607:web:59481d60262b9d539d6292",
-  measurementId: "G-6DKJZ5LWEV"
-};
+const openai = new OpenAI({apiKey: openai_key,  dangerouslyAllowBrowser: true});
+
+const firebaseConfig = {};
 
 initializeApp(firebaseConfig);
 const auth = getAuth();
