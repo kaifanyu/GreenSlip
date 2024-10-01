@@ -1,0 +1,66 @@
+.block {
+    padding: 30px 30px 50px 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-shadow: var(--shadow);
+    border-radius: 0.4rem;
+    /* width: 100vw; */
+    height: fit-content;
+    width: fit-content;
+  }
+
+.feedback-block {
+  background-color: white;
+}
+
+.feedback-responses-block {
+  background-color: white;
+}
+
+.home-block {
+  color: white;
+  font-weight: 600;
+}
+
+.about-block {
+  width: fit-content;
+  background-color: var(--secondary-color);
+  color: white;
+  width: 60vw;
+  padding: 50px;
+}
+
+.about-block-motivation {
+  background-color: var(--primary-color-dark);
+  color: black;
+  margin-top: 50px;
+}
+
+.about-block-motivation h2 {
+  transition-duration: 0.75s;
+}
+
+.about-block-motivation:hover h2 {
+  color: var(--secondary-color);
+  transform: translateX(20px);
+}
+
+.about-block-how {
+  margin-top: 50px;
+}
+
+.about-block-how li, .about-block-how p, .about-block-how h2 {
+  color: white;
+}
+
+.about-block-how h2 {
+  transition-duration: 0.75s;
+}
+
+.about-block-how:hover h2 {
+  color: var(--primary-color);
+  transform: translateX(20px);
+}

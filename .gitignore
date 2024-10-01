@@ -1,0 +1,4 @@
+**/__pycache__/
+**/database.db
+Flask/Flask/files/*
+client/node_modules/*

@@ -1,0 +1,69 @@
+.home-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  background: linear-gradient(#CEE4DB, #E6ECD6);
+  height: max-content;
+}
+
+h1 {
+  color: #4A766E;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.features {
+  display: flex;
+  justify-content: center; /* Center the features horizontally */
+  align-items: start; /* Align items to start from the top */
+  margin-top: 40px;
+  gap: 20px; /* Adds gap between feature elements */
+}
+
+.feature {
+  flex: 1; /* Each feature takes equal width */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns content of each feature in center */
+}
+
+.feature img {
+  width: 80%; /* Reduces width of images to fit better */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #4A766E;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #666;
+  text-align: center; /* Centers the text inside each feature */
+}
+
+.receipt-collection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.receipt-collection img {
+  width: 48%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #4A766E; /* Adds a green border, adjust the color as needed */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Adds a slight drop shadow */
+}
+

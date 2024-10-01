@@ -1,0 +1,69 @@
+.navbar-header {
+    height: 100vh;
+    background-color: #3a5a40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    justify-content: space-between; /* Space between top items and bottom email */
+}
+
+.expanded {
+    width: 15%;
+}
+
+.collapsed {
+    width: 50px; /* Enough to show the toggle button */
+}
+
+.navbar-container {
+    width: 100%;
+    flex-grow: 1; /* Allows the container to grow only as much as needed */
+    overflow: auto; /* Adds scrolling to navbar container if content is too much */
+}
+
+.title-button, .nav-tab {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    flex-shrink: 0;
+}
+
+.button-container {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    
+    position: absolute; /* Ensure button is always visible */
+    top: 60px; /* Adjust position as needed */
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.user-info {
+    /* padding: 10px 20px; Provide padding for the email display */
+    margin-left: 50px;
+    margin-top: 220px;
+    font: weight 80px;;
+    width: 100%; /* Full width to center align text */
+    text-align: center; /* Center the text horizontally */
+    font-size: 0.9em; /* Adjust font size as needed */
+    color: #ffffff; /* White color for the text */
+    margin-bottom: 20px; /* Space from the bottom edge */
+}

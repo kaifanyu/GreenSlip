@@ -1,0 +1,68 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw; /* Ensure full viewport width */
+}
+
+.main-login {
+  display: flex; /* Add flex to ensure centering */
+  align-items: center; /* Align vertically */
+  justify-content: center; /* Align horizontally */
+  width: 100%; /* Full width to help with centering */
+  height: auto; /* Full height to ensure it takes up all vertical space */
+  
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.login-title {
+  color: #4A766E;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  background-color: #4A766E;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #3a5957;
+}
+
+.login-input:focus {
+  border-color: #4A766E;
+  outline: none;
+}

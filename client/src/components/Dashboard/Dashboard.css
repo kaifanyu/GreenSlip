@@ -1,0 +1,440 @@
+body {
+    /* font-family: 'Arial', sans-serif; */
+    margin: 20px;
+    color: #333;
+    height: max-content;
+    background-color: #ADCED3;
+}
+
+/* Header styles */
+.header {
+    text-align: right;
+    padding: 10px 20px;
+    /* background-color: #fff; */
+    /* border-bottom: 1px solid #ddd; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;  /* Space between email and button */
+}
+
+.logged-in-email {
+    color: #194d14;
+    font-size: 16px;
+}
+
+/* Button styles */
+button.logout-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button.logout-button:hover {
+    background-color: #0056b3;
+}
+.dashboard{
+    /* background-color: pink; */
+    width: 98%;
+    padding-right: 10px;
+}
+
+.dashboard-title{
+    font-size: 35px;
+}
+.dashboard-title, .stores-summary-title {
+    color: #333;
+    padding: 0;
+}
+
+.expand-stores-button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.expand-stores-button:hover {
+    background-color: #367C39; /* Darker green on hover */
+}
+
+
+.stores-summary {
+    background-color: #fff;
+    border: 2px solid #3e9c35; /* Increase border size and set color */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 300px; /* Fixed width like a receipt */
+    position: relative;
+}
+
+.stores-summary-title {
+    text-align: center;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+}
+
+.store-container {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px dashed #ccc;
+    margin-top: 10px;
+}
+
+.store-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.store-details {
+    margin: 2px 0;
+    font-size: 20px;
+}
+
+.store-items {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    display: none; /* Initially hide details */
+    font-size: 20px;
+}
+
+.store-container:hover .store-items {
+    display: block; /* Show details on hover */
+}
+.loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+.progress-bar-container {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    height: 20px;
+    border-radius: 8px;
+    transition: width 0.4s ease;
+}
+
+.cost-bar {
+    background-color: #4caf50;
+}
+
+.co2-bar {
+    background-color: #132a13;
+}
+
+
+.welcome-text {
+    padding: 0;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.button-group {
+    display: flex; /* Aligns buttons in a row */
+    justify-content: flex-end; /* Aligns the button group to the right side */
+    gap: 5px; /* Reduces the space between buttons */
+    margin-right: 20px; /* Adjusts margin to push the group closer to the right edge */
+  }
+  
+  button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    background-color: #f0f0f0; /* Default background color */
+    color: black; /* Default text color */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Dark blue background on hover */
+  }
+  
+
+/* Top row - Chart and monthly analysis */
+.top-row {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+
+}
+
+/* Chart container styles */
+.chart-container {
+    background: linear-gradient(#CEE4DB, #E6ECD6); /* Gradient from top to bottom */
+
+    padding: 20px;
+    border: 2px solid #3e9c35; /* Increase border size and set color */
+    border-radius: 15px;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the left and right */
+    align-items: center; /* Vertically centers the title and button if they have different heights */
+}
+
+.chart-title {
+    margin: 0; /* Removes default margin */
+    color: #333;
+    font-size: 25px;
+}
+
+.chart-toggle-button {
+    padding: 8px 16px; /* Gives some padding around the text */
+    cursor: pointer; /* Indicates it's clickable */
+    background-color: #007bff; /* Bootstrap primary button color, you can change it */
+    color: white; /* Text color */
+    border: none; /* Removes border */
+    border-radius: 4px; /* Slightly rounded corners for the button */
+}
+
+hr {
+    margin-top: 10px; /* Adds some space between the header and the line */
+    border: 0; /* Removes default border style */
+    height: 2px; /* Sets the height of the line */
+    background-color: #ccc; /* Sets the color of the line */
+    width: 100%; /* Ensures the line stretches across the container */
+}
+
+.calcScore{
+    color: #367C39;
+    font-size: 40px;
+    padding: 0;
+    margin: 10px;
+}
+
+.score-container {
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.score {
+    flex: 1;
+    text-align: center;
+    padding: 7px;
+    margin: 7px;
+    border: 1px solid #ccc; /* Optional: adds a border around each score block */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Optional: adds subtle shadow for depth */
+}
+
+.score h2 {
+    margin-bottom: 5px;
+}
+
+/* Emissions Dashboard Styles */
+.emissions-dashboard {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    border: 2px solid #3e9c35;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 16px;
+    width: 300px; /* Match width of the stores summary for uniformity */
+}
+.feedback-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.feedback-section h3 {
+    color: #2c3e50;
+}
+
+.feedback-detail h4 {
+    color: #27ae60;
+    margin-bottom: 5px;
+}
+
+.feedback-detail ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feedback-detail ul li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.loading-feedback {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+
+.emissions-dashboard h3 {
+    color: black;
+    font-size: 22px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px; /* Add more space below the title */
+}
+
+.emissions-dashboard p {
+    margin: 10px 0;
+    color: #666; /* Lighter text for less emphasis */
+}
+
+/* Styles for positive, average, and negative emission comparison feedback */
+.emissions-feedback-positive {
+    color: #4CAF50; /* Green for positive impact */
+    font-weight: bold;
+}
+
+.emissions-feedback-average {
+    color: #FFC107; /* Amber for neutral impact */
+    font-weight: bold;
+}
+
+.emissions-feedback-negative {
+    color: #F44336; /* Red for negative impact */
+    font-weight: bold;
+}
+              
+
+/* Monthly statistics */
+.month-analysis {
+    background: linear-gradient(#CEE4DB, #E6ECD6); /* Gradient from top to bottom */
+
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto; /* Centering the container */
+    border: 2px solid #3e9c35; /* Enhanced border size and color */
+    border-radius: 15px;
+}
+
+.month-analysis select {
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    appearance: none; /* Removes default styles */
+    font-size: 16px;
+    color: #333;
+}
+
+.month-analysis select:focus {
+    border-color: #3e9c35;
+    outline: none;
+}
+
+.month-analysis h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+/* Bottom row - Store summary and another content if needed */
+.bottom-row {
+    display: grid;
+    grid-template-columns: 30% 70%; /* Adjusted to 30% and 70% */
+    gap: 20px;
+    align-items: start; /* Aligns the content at the top of the grid */
+}
+
+/* Store data styles */
+.store-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 86%; /* Ensures it takes up the full width of the grid column */
+}
+.stores-summary{
+    width: fit-content;
+    background: linear-gradient(#CDE9E7, #E1D8D6); /* Gradient from top to bottom */
+}
+.store-title {
+    color: #4EBB7C;
+}
+
+.store-details {
+    font-size: 14px;
+}
+
+.store-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.store-items li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.store-items li:last-child {
+    border-bottom: none;
+}
+
+.loading-text {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Emissions Dashboard Styles */
+.emissions-dashboard {
+    background: linear-gradient(#CDE9E7, #E1D8D6); /* Gradient from top to bottom */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #3e9c35; /* Increase border size and set color */
+    font-size: 16px;
+    width: 90%; /* Ensures it takes up the full width of the grid column */
+}
+
+.emissions-dashboard h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.emissions-dashboard p {
+    color: black;
+    margin: 10px 0;
+    font-size: 20px; /* Uniform font size with store details */
+}
